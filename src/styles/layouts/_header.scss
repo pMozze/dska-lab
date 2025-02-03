@@ -1,0 +1,57 @@
+.header {
+  position: sticky;
+  width: 100%;
+
+  top: 0;
+  right: 0;
+
+  background-color: rgba(234, 245, 255, 0.95);
+
+  > .container {
+    display: flex;
+    padding: 20px;
+
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  &__logotype {
+    margin-right: auto;
+
+    > img {
+      width: 50px;
+    }
+  }
+
+  &-navigation {
+    display: flex;
+    column-gap: 50px;
+    margin-right: 25px;
+
+    &__item {
+      font-weight: 500;
+      transition: color 300ms ease-in-out;
+
+      &:hover,
+      &:focus-visible {
+        color: #378ffd;
+      }
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      font-size: 13px;
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+  }
+}

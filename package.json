@@ -1,0 +1,20 @@
+{
+  "name": "dska-lab",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.4"
+  }
+}
