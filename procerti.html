@@ -60,7 +60,7 @@
         </div>
         <div class="news-list__content">
           <div class="news-list__content-tab active" data-tab="1">
-            <div class="news-list__content-tab-item">
+            <div class="news-list__content-tab-item" data-news-modal="Об Изменениях на WB1">
               <div class="news-list__content-tab-item-title">Об Изменениях на WB1</div>
               <div class="news-list__content-tab-item-date">10-02-2025</div>
             </div>
@@ -206,6 +206,7 @@
         </div>
       </div>
     </footer>
+
     <div id="modal" class="modal hide">
       <span class="close-modal-btn">
         <svg
@@ -255,6 +256,43 @@
         </form>
       </div>
     </div>
+
+    <div class="news-modal" data-news-modal="Об Изменениях на WB1">
+      <div class="news-modal-header">
+        <button class="news-modal-header__close-button" type="button">
+          <svg
+            role="presentation"
+            class="t-popup__close-icon"
+            width="11"
+            height="20"
+            viewBox="0 0 11 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L10 10L1 19" stroke="#000000" stroke-width="2"></path>
+          </svg>
+        </button>
+        <div class="news-modal-header__title">#Про_сертификацию</div>
+      </div>
+      <div class="news-modal-body">
+        <div class="news-modal-body__title">Карты, деньги, два серта или как не стоит рисковать будучи селлером</div>
+        <div class="news-modal-body-tags">
+          <div class="news-modal-body-tags__item">25-06-2024</div>
+          <a class="news-modal-body-tags__item" href="">Про сертификацию</a>
+        </div>
+        <div class="news-modal-body__content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi sint repellendus fugit ea natus
+          id in aperiam exercitationem. Quisquam laborum excepturi dolores labore commodi quidem quam eveniet error, ex
+          laudantium maiores molestias quas rem sint non sapiente veritatis nesciunt nobis tempora aspernatur iusto
+          officia similique. Quam ipsam consectetur beatae atque? Eligendi nam veniam, nostrum suscipit mollitia
+          consequatur dolor reiciendis architecto facere voluptates porro asperiores atque corporis eum hic. Nulla rem
+          consequatur, inventore id molestiae voluptatum praesentium vel laborum quibusdam mollitia consectetur
+          aspernatur doloribus pariatur sint veritatis harum optio placeat quae voluptas deserunt aut animi. Amet,
+          corporis laudantium. Sint, commodi?
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/scripts/pages/procerti.ts"></script>
   </body>
 </html>
