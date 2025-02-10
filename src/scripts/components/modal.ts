@@ -25,6 +25,7 @@ function closeModal() {
 
 function handleClick(event: Event) {
   const target = event.target as HTMLElement;
+  const closeBtn = document.getElementById('closeBtn');
 
   if (target.classList.contains('open-modal-btn')) {
     openModal();

@@ -1089,7 +1089,7 @@
         width: 20px;
         height: 20px;
         border: 2px solid black;
-        border-radius: 2px;
+
         position: relative;
         background-color: transparent;
         cursor: pointer;
@@ -1216,7 +1216,7 @@
   align-items: center;
   z-index: 9999999;
 
-  .close {
+  .close-modal-btn {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1290,7 +1290,7 @@
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
 
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   .checkbox-container {
@@ -1308,7 +1308,7 @@
       width: 20px;
       height: 20px;
       border: 2px solid black;
-      border-radius: 2px;
+
       position: relative;
       background-color: transparent;
       cursor: pointer;

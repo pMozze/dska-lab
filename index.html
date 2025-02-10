@@ -702,21 +702,23 @@
       </div>
     </footer>
     <div id="modal" class="modal hide">
-      <span class="close close-modal-btn">
+      <span class="close-modal-btn">
         <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
       </span>
       <div class="modal-content">
-          <h2 class="modal-content__title">Быстрый запрос</h2>
-          <input type="text" placeholder="Имя" class="input">
-          <input type="tel" placeholder="+7 (999) 999-99-99" class="input">
-          <input type="text" placeholder="Промокод" class="input">
-          <div class="checkbox-container">
-            <label class="checkbox-container">
-              <input type="checkbox" re="">
-            </label>
-            <span>Нажимая на кнопку "Отправить" вы <a href="#">соглашаетесь на обработку персональных данных</a></span>
-          </div>
-          <button class="btn">Отправить</button>
+          <form action="" method="">
+            <h2 class="modal-content__title">Быстрый запрос</h2>
+            <input type="text" placeholder="Имя" class="input" required>
+            <input type="tel" placeholder="+7 (999) 999-99-99" class="input" required>
+            <input type="text" placeholder="Промокод" class="input">
+            <div class="checkbox-container">
+              <label class="checkbox-container">
+                <input type="checkbox" required>
+              </label>
+              <span>Нажимая на кнопку "Отправить" вы <a href="#">соглашаетесь на обработку персональных данных и получение рекламных рассылок</a></span>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
