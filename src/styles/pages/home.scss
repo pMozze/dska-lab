@@ -156,10 +156,6 @@
 }
 
 .docs_block {
-  width: 1160px;
-
-  margin: 0 auto;
-
   padding: 60px 0;
 
   .grid-wrapper {
@@ -1089,6 +1085,7 @@
         width: 20px;
         height: 20px;
         border: 2px solid black;
+        border-radius: 0;
 
         position: relative;
         background-color: transparent;
