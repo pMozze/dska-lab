@@ -1,6 +1,7 @@
 import './scripts/components/dropdown';
 import './scripts/components/tooltips';
 import './scripts/components/accordion';
+import './scripts/components/modal';
 
 import './scripts/map';
 
