@@ -7,7 +7,13 @@ export default defineConfig({
         index: './index.html',
         about: './about.html',
         certificated: './certificated.html',
-        solution: './solution.html'
+        solution: './solution.html',
+        typography: './src/styles/base/typography.scss'
+      },
+      output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
       }
     }
   }
