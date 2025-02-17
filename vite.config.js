@@ -7,7 +7,8 @@ export default defineConfig({
         index: './index.html',
         about: './about.html',
         certificated: './certificated.html',
-        solution: './solution.html'
+        solution: './solution.html',
+        procerti: './procerti.html'
       }
     }
   }

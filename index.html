@@ -8,7 +8,55 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+
+      <div class="container mobile">
+        <div class="header-logotype__wrapper">
+          <a class="header__logotype" href="/">
+            <img src="/images/main/logotype.png" alt="" />
+          </a>
+          <button class="header__hamburger-button" type="button">
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+        </div>
+        <div class="header-mobile__wrapper">
+          <div class="header-navigation">
+            <div class="header-navigation__item mob-dropdown">
+              <button class="dropdown__button mob-dropdown" type="button">Услуги</button>
+              <div class="mob-dropdown-content">
+                <a class="dropdown-content__item" href="certificated.html">Сертификация товаров</a>
+                <a class="dropdown-content__item" href="">Маркировка "Честный знак" (скоро)</a>
+                <a class="dropdown-content__item" href="">Экологическая экспертиза (скоро)</a>
+              </div>
+            </div>
+            <div class="header-navigation__item mob-dropdown">
+              <button class="dropdown__button" type="button">Решения</button>
+              <div class="mob-dropdown-content">
+                <a class="dropdown-content__item" href="">Для производителей</a>
+                <a class="dropdown-content__item" href="">Для ипортеров</a>
+                <a class="dropdown-content__item" href="">Для маркетплейсов</a>
+              </div>
+            </div>
+            <div class="header-navigation__item mob-dropdown">
+              <button class="dropdown__button" type="button">Материалы</button>
+              <div class="mob-dropdown-content">
+                <a class="dropdown-content__item" href="">#Про_серты</a>
+                <a class="dropdown-content__item" href="">База знаний (Скоро)</a>
+              </div>
+            </div>
+            <a class="header-navigation__item" href="about.html">О нас</a>
+          </div>
+          <div class="header-contacts">
+            <div class="header-contacts__links">
+              <a class="header-contacts__item" href="tel:+74951066015">+7 (495) 106-60-15</a>
+              <a class="header-contacts__item" href="mailto:zakaz@dska-lab.ru">zakaz@dska-lab.ru</a>
+            </div>
+            <button class="header__button button open-modal-btn" type="button">Стать клиентом</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container desktop">
         <a class="header__logotype" href="/">
           <img src="/images/main/logotype.png" alt="" />
         </a>
@@ -49,75 +97,220 @@
     <section class="hero">
       <div class="hero__wrapper">
         <div class="hero-buttons">
-          <button class="hero-buttons__item hero-buttons__item_active" type="button">Производителям</button>
-          <button class="hero-buttons__item" type="button">Импортерам</button>
-          <button class="hero-buttons__item" type="button">Поставщикам на маркетплейс</button>
+
+          <button class="hero-buttons__item hero-buttons__item_active" type="button" data-tab="1" data-img-url="/images/hero-bg-1.png">
+            Производителям
+          </button>
+
+          <button class="hero-buttons__item" type="button" data-tab="2" data-img-url="/images/hero-bg-2.png">
+            Импортерам
+          </button>
+
+          <button class="hero-buttons__item" type="button" data-tab="3" data-img-url="/images/hero-bg-3.png">
+            Поставщикам на маркетплейс
+          </button>
         </div>
-        <div class="hero-body">
-          <div class="hero-body__left">
-            <div class="hero-body__title">
-              Сертификация и экспертиза
-              <br />
-              для производителей
-              <br />
-              <span>с гарантией результата</span>
+        
+        <div class="hero-contents">
+          <div class="hero-body active" data-tab="1">
+            <div class="hero-body__left">
+              <div class="hero-body__title">
+                Сертификация и экспертиза
+                <br />
+                для производителей
+                <br />
+                <span>с гарантией результата1</span>
+              </div>
+              <div class="hero-body-benefits">
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-body-buttons">
+                <button class="hero-body-buttons__button button" type="button">Получить предложение</button>
+                <a class="hero-body-buttons__link" href="/">
+                  Подробнее
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="5907.76953125 5384.76953125 12.46142578125 22.4912109375"
+                  >
+                    <path
+                      fill="transparent"
+                      stroke="#000000"
+                      fill-opacity="1"
+                      stroke-width="2"
+                      stroke-opacity="1"
+                      fill-rule="evenodd"
+                      id="tSvg1569898e8b9"
+                      d="M 5909.7694749098555 5386.769596980168 C 5909.7694749098555 5386.769596980168 5918.2310133713945 5395.231135441707 5918.2310133713945 5395.231135441707 C 5918.2310133713945 5395.231135441707 5909.7694749098555 5405.260673903245 5909.7694749098555 5405.260673903245"
+                      stroke-linecap="butt"
+                    ></path>
+                    <defs></defs>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="hero-body-benefits">
-              <div class="hero-body-benefits-item">
-                <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
-                <div class="hero-body-benefits-item__body">
-                  <div class="hero-body-benefits-item__title">"Честный знак"</div>
-                  <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
-                </div>
-              </div>
-              <div class="hero-body-benefits-item">
-                <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
-                <div class="hero-body-benefits-item__body">
-                  <div class="hero-body-benefits-item__title">"Честный знак"</div>
-                  <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
-                </div>
-              </div>
-              <div class="hero-body-benefits-item">
-                <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
-                <div class="hero-body-benefits-item__body">
-                  <div class="hero-body-benefits-item__title">"Честный знак"</div>
-                  <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
-                </div>
-              </div>
-              <div class="hero-body-benefits-item">
-                <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
-                <div class="hero-body-benefits-item__body">
-                  <div class="hero-body-benefits-item__title">"Честный знак"</div>
-                  <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
-                </div>
-              </div>
-            </div>
-            <div class="hero-body-buttons">
-              <button class="hero-body-buttons__button button" type="button">Получить предложение</button>
-              <a class="hero-body-buttons__link" href="/">
-                Подробнее
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="5907.76953125 5384.76953125 12.46142578125 22.4912109375"
-                >
-                  <path
-                    fill="transparent"
-                    stroke="#000000"
-                    fill-opacity="1"
-                    stroke-width="2"
-                    stroke-opacity="1"
-                    fill-rule="evenodd"
-                    id="tSvg1569898e8b9"
-                    d="M 5909.7694749098555 5386.769596980168 C 5909.7694749098555 5386.769596980168 5918.2310133713945 5395.231135441707 5918.2310133713945 5395.231135441707 C 5918.2310133713945 5395.231135441707 5909.7694749098555 5405.260673903245 5909.7694749098555 5405.260673903245"
-                    stroke-linecap="butt"
-                  ></path>
-                  <defs></defs>
-                </svg>
-              </a>
-            </div>
+            <img class="hero-body__image" src="/images/hero/4.png" alt="" />
           </div>
-          <img class="hero-body__image" src="/images/hero/4.png" alt="" />
+  
+          <div class="hero-body" data-tab="2">
+            <div class="hero-body__left">
+              <div class="hero-body__title">
+                Сертификация и экспертиза
+                <br />
+                для производителей
+                <br />
+                <span>с гарантией результата2</span>
+              </div>
+              <div class="hero-body-benefits">
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-body-buttons">
+                <button class="hero-body-buttons__button button" type="button">Получить предложение</button>
+                <a class="hero-body-buttons__link" href="/">
+                  Подробнее
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="5907.76953125 5384.76953125 12.46142578125 22.4912109375"
+                  >
+                    <path
+                      fill="transparent"
+                      stroke="#000000"
+                      fill-opacity="1"
+                      stroke-width="2"
+                      stroke-opacity="1"
+                      fill-rule="evenodd"
+                      id="tSvg1569898e8b9"
+                      d="M 5909.7694749098555 5386.769596980168 C 5909.7694749098555 5386.769596980168 5918.2310133713945 5395.231135441707 5918.2310133713945 5395.231135441707 C 5918.2310133713945 5395.231135441707 5909.7694749098555 5405.260673903245 5909.7694749098555 5405.260673903245"
+                      stroke-linecap="butt"
+                    ></path>
+                    <defs></defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img class="hero-body__image" src="/images/hero/4.png" alt="" />
+          </div>
+  
+          <div class="hero-body" data-tab="3">
+            <div class="hero-body__left">
+              <div class="hero-body__title">
+                Сертификация и экспертиза
+                <br />
+                для производителей
+                <br />
+                <span>с гарантией результата3</span>
+              </div>
+              <div class="hero-body-benefits">
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+                <div class="hero-body-benefits-item">
+                  <img class="hero-body-benefits-item__image" src="/images/hero/5.svg" alt="" />
+                  <div class="hero-body-benefits-item__body">
+                    <div class="hero-body-benefits-item__title">"Честный знак"</div>
+                    <div class="hero-body-benefits-item__description">Регистрация и маркировка под ключ</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-body-buttons">
+                <button class="hero-body-buttons__button button" type="button">Получить предложение</button>
+                <a class="hero-body-buttons__link" href="/">
+                  Подробнее
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="5907.76953125 5384.76953125 12.46142578125 22.4912109375"
+                  >
+                    <path
+                      fill="transparent"
+                      stroke="#000000"
+                      fill-opacity="1"
+                      stroke-width="2"
+                      stroke-opacity="1"
+                      fill-rule="evenodd"
+                      id="tSvg1569898e8b9"
+                      d="M 5909.7694749098555 5386.769596980168 C 5909.7694749098555 5386.769596980168 5918.2310133713945 5395.231135441707 5918.2310133713945 5395.231135441707 C 5918.2310133713945 5395.231135441707 5909.7694749098555 5405.260673903245 5909.7694749098555 5405.260673903245"
+                      stroke-linecap="butt"
+                    ></path>
+                    <defs></defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img class="hero-body__image" src="/images/hero/4.png" alt="" />
+          </div>
         </div>
+
       </div>
     </section>
 
