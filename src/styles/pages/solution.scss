@@ -12,7 +12,7 @@
   }
 
   @media (max-width: 767px) {
-    height: 100% !important;
+    height: unset !important;
   }
 
   &__wrapper {
@@ -1126,7 +1126,8 @@
       margin-top: 40px;
 
       max-width: 260px;
-      height: 359px;
+      height: 400px;
+      width: 100%;
       border-radius: 25px;
       background-color: #ffffff;
       background-position: center center;
@@ -1139,7 +1140,7 @@
         margin-top: 0;
       }
 
-      padding: 10px 20px;
+      padding: 10px 15px;
 
       position: relative;
 
@@ -1161,7 +1162,7 @@
           li {
             color: #000000;
             font-size: 16px;
-            line-height: 1.05;
+            line-height: 1;
             font-weight: 400;
             background-position: center center;
             border-color: transparent;

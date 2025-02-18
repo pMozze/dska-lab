@@ -12,7 +12,7 @@
 }
 
 .hero-body {
-  opacity: 0.2;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 .hero-body.active {
@@ -122,6 +122,10 @@
 
     border-radius: 25px;
     background-color: rgba(210, 234, 254, 0.6);
+
+    position: relative;
+
+    opacity: 0;
 
     @media (max-width: 1239px) {
       padding: 30px;
