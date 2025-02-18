@@ -7,7 +7,55 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+
+      <div class="container mobile">
+        <div class="header-logotype__wrapper">
+          <a class="header__logotype" href="/">
+            <img src="/images/main/logotype.png" alt="" />
+          </a>
+          <button class="header__hamburger-button" type="button">
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+        </div>
+        <div class="header-mobile__wrapper">
+          <div class="header-navigation">
+            <div class="header-navigation__item mob-dropdown">
+              <button class="dropdown__button mob-dropdown" type="button">Услуги</button>
+              <div class="mob-dropdown-content">
+                <a class="dropdown-content__item" href="certificated.html">Сертификация товаров</a>
+                <a class="dropdown-content__item" href="">Маркировка "Честный знак" (скоро)</a>
+                <a class="dropdown-content__item" href="">Экологическая экспертиза (скоро)</a>
+              </div>
+            </div>
+            <div class="header-navigation__item mob-dropdown">
+              <button class="dropdown__button" type="button">Решения</button>
+              <div class="mob-dropdown-content">
+                <a class="dropdown-content__item" href="">Для производителей</a>
+                <a class="dropdown-content__item" href="">Для ипортеров</a>
+                <a class="dropdown-content__item" href="">Для маркетплейсов</a>
+              </div>
+            </div>
+            <div class="header-navigation__item mob-dropdown">
+              <button class="dropdown__button" type="button">Материалы</button>
+              <div class="mob-dropdown-content">
+                <a class="dropdown-content__item" href="">#Про_серты</a>
+                <a class="dropdown-content__item" href="">База знаний (Скоро)</a>
+              </div>
+            </div>
+            <a class="header-navigation__item" href="about.html">О нас</a>
+          </div>
+          <div class="header-contacts">
+            <div class="header-contacts__links">
+              <a class="header-contacts__item" href="tel:+74951066015">+7 (495) 106-60-15</a>
+              <a class="header-contacts__item" href="mailto:zakaz@dska-lab.ru">zakaz@dska-lab.ru</a>
+            </div>
+            <button class="header__button button open-modal-btn" type="button">Стать клиентом</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container desktop">
         <a class="header__logotype" href="/">
           <img src="/images/main/logotype.png" alt="" />
         </a>
@@ -23,9 +71,9 @@
           <div class="header-navigation__item dropdown">
             <button class="dropdown__button" type="button">Решения</button>
             <div class="dropdown-content">
-              <a class="dropdown-content__item" href="solution.html">Для производителей</a>
-              <a class="dropdown-content__item" href="solution.html">Для ипортеров</a>
-              <a class="dropdown-content__item" href="solution.html">Для маркетплейсов</a>
+              <a class="dropdown-content__item" href="">Для производителей</a>
+              <a class="dropdown-content__item" href="">Для ипортеров</a>
+              <a class="dropdown-content__item" href="">Для маркетплейсов</a>
             </div>
           </div>
           <div class="header-navigation__item dropdown">
@@ -41,7 +89,7 @@
           <a class="header-contacts__item" href="tel:+74951066015">+7 (495) 106-60-15</a>
           <a class="header-contacts__item" href="mailto:zakaz@dska-lab.ru">zakaz@dska-lab.ru</a>
         </div>
-        <button class="header__button button" type="button">Стать клиентом</button>
+        <button class="header__button button open-modal-btn" type="button">Стать клиентом</button>
       </div>
     </header>
 
@@ -163,7 +211,7 @@
               </div>
             </div>
             <div class="useful-functions-solutions__grid-item-picture">
-							<img src="/public/images/certificates/func_2.png" alt="">
+							<img src="/images/certificates/func_2.png" alt="">
 						</div>
           </div>
 
@@ -335,6 +383,15 @@
 					Стоимость сертификации и экспертизы <br />
 					зависит <span>от вида продукции и типа производства</span>
 				</div>
+
+        <div class="chat-sticker">
+          <div class="chat-sticker-text">
+            Не знаете с чего начать?<br />
+            Напишите и мы подберём<br />
+            для вас подходящее решение<br />
+          </div>
+        </div>
+
 				<div class="price-section__cards">
 					<div class="price-section__cards-item">
 						<div class="price-section__cards-item-title">Старт</div>
@@ -388,12 +445,16 @@
 						<div class="price-section__cards-item-title">Старт</div>
 						<div class="price-section__cards-item-body">
 							<ul>
-								<li>Декларация о соответствии</li>
-								<li>Протокол Испытаний</li>
-								<li>Технические условия</li>
-								<li>Помощь в выгрузке</li>
-								<li>Сопровождение</li>
-							</ul>
+                <li>Декларация или Сертификат</li>
+                <li>Протокол Испытаний</li>
+                <li>Технические условия</li>
+                <li>Помощь в выгрузке</li>
+                <li>Сопровождение</li>
+                <li>Честный знак</li>
+                <li>Скидки от партнёров</li>
+                <li>Аудит по таможенному оформлению</li>
+                <li>Приоритетный выпуск документов</li>
+              </ul>
 						</div>
 						<div class="price-section__cards-item-price">
 							<div class="price-section__cards-item-line"></div>
