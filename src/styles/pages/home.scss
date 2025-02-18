@@ -1513,12 +1513,14 @@
   }
 }
 
-.modal.show {
+.modal.show,
+.success-modal.show {
   display: flex;
   animation: fadeIn 0.3s ease-out;
 }
 
-.modal.hide {
+.modal.hide,
+.success-modal.hide {
   animation: fadeOut 0.3s ease-out;
 }
 
@@ -1534,7 +1536,8 @@
   align-items: center;
   z-index: 9999999;
 
-  .close-modal-btn {
+  .close-modal-btn,
+  .close-success-modal-btn {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1664,5 +1667,19 @@
     span {
       text-align: left;
     }
+  }
+}
+
+#success-modal .modal-content {
+  background: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
 }
