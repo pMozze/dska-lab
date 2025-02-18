@@ -249,8 +249,16 @@
     position: relative;
     height: 625.5px;
 
+    @media (max-width: 768px) {
+      height: 999px;
+    }
+
     > * {
       position: absolute;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
