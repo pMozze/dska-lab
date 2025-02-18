@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         activeContent.style.opacity = '1';
         newContent.style.opacity = '0.1';
         newContent.hidden = false;
+        newContent.classList.add('active');
 
         requestAnimationFrame(() => {
           activeContent.style.opacity = '0.9';

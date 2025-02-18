@@ -244,6 +244,15 @@
       object-fit: scale-down;
     }
   }
+
+  &-contents {
+    position: relative;
+    height: 625.5px;
+
+    > * {
+      position: absolute;
+    }
+  }
 }
 
 .docs_block {
